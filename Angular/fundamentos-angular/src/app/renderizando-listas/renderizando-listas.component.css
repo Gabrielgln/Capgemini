@@ -1,0 +1,8 @@
+.lista-produtos span{
+    background-color: green;
+    border-radius: 8px;
+}
+
+.lista-produtos .esgotado{
+    background-color: red;
+}

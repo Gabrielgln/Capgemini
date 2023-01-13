@@ -1,0 +1,32 @@
+<h2>segundo-componente works!</h2>
+<p>Aprofundando os conhecimentos em template</p>
+
+<!----Declarando o nome com caixa alta------>
+<p>Nome: {{nome | uppercase}}</p>
+
+<!----Data de nascimento no formato tradicional------>
+<p>Data Nascimento: {{ dataNascimento | date:"dd/MM/yyyy"}}</p>
+
+<!----Usando uma função implementada manualmente do tipo pippe------>
+<p>usando o multiplicador customizado:</p>
+<p>{{2 | multiplicarPor: 2}}</p>
+
+<!----Importando uma imagem e difinindo o tamanho------>
+<img [src]="urlImagem" width="300">
+
+<!----Botão para amostrar a data de nascimento com uma função manual------>
+<p></p>
+<button (click)="mostrarDataNascimento()" type="button">Mostrar data de nascimento</button>
+
+<!----Mostrar o nome digitado nod input------>
+<h2>Two-way data binding</h2>
+<!----label+input para formar a caixinha de dialog------>
+<label for="nome1">Digite o nome: </label>
+<!----ngModel + importar o "formsModule" no app.module! ------>
+<input type="text" [(ngModel)]="nome1">
+<p>Nome digitado: {{nome1}}</p>
+
+
+
+
+
