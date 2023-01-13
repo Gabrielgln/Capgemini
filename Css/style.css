@@ -1,0 +1,83 @@
+@font-face {    /* criação de uma nova fonte: */
+    font-family: alexbrush;
+    src: url(AlexBrush-Regular.ttf);
+}
+
+h2{   /* tag normal "nome da tag + {}" */
+    color: red;
+}
+.titulo-aula{   /* tag para classe ".nome da classe" */
+    text-decoration: underline; 
+}
+.texto-azul{
+    color: blue;
+    letter-spacing: 1rem;
+    text-transform: lowercase;
+}
+.texto-vermelho{
+    color: red;
+    text-transform: uppercase;
+}
+#titulo-primeira-aula{   /* tag para id "#id correspondente" */
+    text-decoration:underline;
+}
+p{
+    color: black; /* cor do paragrafo*/
+    text-indent: 2rem; /* espaço para cada paragrafo*/
+    text-align: left;  /* por onde o texto começa - nessa caso esquerda*/
+    font-family: alexbrush,cursive; /* fonte do paragrafo*/
+    font-weight: 900;
+    font-size: 2rem; /* tamanho da fonte do paragrafo*/
+    border-color: black;
+    border-style: solid; /* borda do paragrafo*/
+}
+h1, h2{       /* duas tag: tag,outra tag */
+    color: red;
+    background-color: green;
+    text-align: center;
+}
+main h1{  /* tag main+tag para todo tipo dessa "tag"*/
+    color: black;
+}
+html{
+    color:#FFFF;
+    background-color: white;
+    background-image: url(https://super.abril.com.br/wp-content/uploads/2018/05/filhotes-de-cachorro-alcanc3a7am-o-c3a1pice-de-fofura-com-8-semanas1.png?w=1024);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: contain;
+    font-style: italic;
+}
+
+a{ /* tag para link "nome da tag{}" */
+    color: blue;
+    cursor: help;  
+}
+
+/* comportamentos dos links: */
+
+a:hover{ /* tag para link passando por cima "nome da tag:hover{}" */
+    color:green;
+    cursor: pointer;
+}
+a:visited{ /* tag para link visitado "nome da tag:visited{}" */
+    color: rebeccapurple;  
+}
+
+a:active{ /* tag para link ativo "nome da tag:active{}" */
+    color: red;
+    cursor:help;  
+}
+
+.box-azul{
+    box-sizing: border-box; /* tipo de box que será usado*/
+    background-color: blue;
+    color: black;
+    text-align: center;
+    width: 5rem;
+    padding: 5px; /* espaçamento do conteudo com a borda*/
+    border-style: solid; /* formato da borda*/
+    border: 2px, solid, #333;
+    border-width: 5px;
+    margin: 1;
+}
